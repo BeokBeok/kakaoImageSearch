@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,9 @@
 		9467837225A5F9AC00A106A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9467837025A5F9AC00A106A2 /* Main.storyboard */; };
 		9467837425A5F9B200A106A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9467837325A5F9B200A106A2 /* Assets.xcassets */; };
 		9467837725A5F9B200A106A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9467837525A5F9B200A106A2 /* LaunchScreen.storyboard */; };
+		9467838825A6058300A106A2 /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9467838725A6058300A106A2 /* Meta.swift */; };
+		9467838B25A606AF00A106A2 /* ImageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9467838A25A606AF00A106A2 /* ImageItem.swift */; };
+		9467838E25A607BE00A106A2 /* ImageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9467838D25A607BE00A106A2 /* ImageResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		9467837325A5F9B200A106A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9467837625A5F9B200A106A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9467837825A5F9B200A106A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9467838725A6058300A106A2 /* Meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
+		9467838A25A606AF00A106A2 /* ImageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageItem.swift; sourceTree = "<group>"; };
+		9467838D25A607BE00A106A2 /* ImageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResponse.swift; sourceTree = "<group>"; };
 		D363FE70AB4A6FA5D40EA015 /* Pods_KakaoImageSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KakaoImageSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7CA00FF4EDC3A9014FCAFE6 /* Pods-KakaoImageSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoImageSearch.release.xcconfig"; path = "Target Support Files/Pods-KakaoImageSearch/Pods-KakaoImageSearch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,7 +54,6 @@
 				0AC10A9B8B03CEDAB77F31D8 /* Pods-KakaoImageSearch.debug.xcconfig */,
 				E7CA00FF4EDC3A9014FCAFE6 /* Pods-KakaoImageSearch.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,6 +86,7 @@
 		9467836925A5F9AC00A106A2 /* KakaoImageSearch */ = {
 			isa = PBXGroup;
 			children = (
+				9467838425A6027E00A106A2 /* Data */,
 				9467836A25A5F9AC00A106A2 /* AppDelegate.swift */,
 				9467836C25A5F9AC00A106A2 /* SceneDelegate.swift */,
 				9467836E25A5F9AC00A106A2 /* ViewController.swift */,
@@ -90,6 +96,24 @@
 				9467837825A5F9B200A106A2 /* Info.plist */,
 			);
 			path = KakaoImageSearch;
+			sourceTree = "<group>";
+		};
+		9467838425A6027E00A106A2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9467838625A6052E00A106A2 /* Entity */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		9467838625A6052E00A106A2 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				9467838725A6058300A106A2 /* Meta.swift */,
+				9467838A25A606AF00A106A2 /* ImageItem.swift */,
+				9467838D25A607BE00A106A2 /* ImageResponse.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,9 +230,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9467838825A6058300A106A2 /* Meta.swift in Sources */,
 				9467836F25A5F9AC00A106A2 /* ViewController.swift in Sources */,
+				9467838E25A607BE00A106A2 /* ImageResponse.swift in Sources */,
 				9467836B25A5F9AC00A106A2 /* AppDelegate.swift in Sources */,
 				9467836D25A5F9AC00A106A2 /* SceneDelegate.swift in Sources */,
+				9467838B25A606AF00A106A2 /* ImageItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
