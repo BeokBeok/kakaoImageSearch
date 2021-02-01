@@ -86,7 +86,7 @@
 		9467836925A5F9AC00A106A2 /* KakaoImageSearch */ = {
 			isa = PBXGroup;
 			children = (
-				9467838425A6027E00A106A2 /* Data */,
+				9467838425A6027E00A106A2 /* Api */,
 				9467836A25A5F9AC00A106A2 /* AppDelegate.swift */,
 				9467836C25A5F9AC00A106A2 /* SceneDelegate.swift */,
 				9467836E25A5F9AC00A106A2 /* ViewController.swift */,
@@ -98,22 +98,22 @@
 			path = KakaoImageSearch;
 			sourceTree = "<group>";
 		};
-		9467838425A6027E00A106A2 /* Data */ = {
+		9467838425A6027E00A106A2 /* Api */ = {
 			isa = PBXGroup;
 			children = (
-				9467838625A6052E00A106A2 /* Entity */,
+				9467838625A6052E00A106A2 /* Model */,
 			);
-			path = Data;
+			path = Api;
 			sourceTree = "<group>";
 		};
-		9467838625A6052E00A106A2 /* Entity */ = {
+		9467838625A6052E00A106A2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				9467838725A6058300A106A2 /* Meta.swift */,
 				9467838A25A606AF00A106A2 /* ImageItem.swift */,
 				9467838D25A607BE00A106A2 /* ImageResponse.swift */,
 			);
-			path = Entity;
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
