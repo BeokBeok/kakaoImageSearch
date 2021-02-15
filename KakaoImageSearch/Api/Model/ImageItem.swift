@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ImageItem: Codable {
+struct ImageItem: Decodable {
     let collection: String
     let thumbnailUrl: String
     let imageUrl: String
