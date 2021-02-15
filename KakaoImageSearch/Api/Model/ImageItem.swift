@@ -10,7 +10,7 @@ import Foundation
 struct ImageItem: Decodable {
     let collection: String
     let thumbnailUrl: String
-    let imageUrl: String
+    let imageURL: String
     let width: Int
     let height: Int
     let displaySitename: String
@@ -20,7 +20,7 @@ struct ImageItem: Decodable {
     private enum CodingKeys: String, CodingKey {
         case collection
         case thumbnailUrl = "thumbnail_url"
-        case imageUrl = "image_url"
+        case imageURL = "image_url"
         case width
         case height
         case displaySitename = "display_sitename"
