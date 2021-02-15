@@ -16,7 +16,7 @@ final class KakaoImageSearchAPI {
         page: Int = 1,
         size: Int = 10
     ) -> Alamofire.DataRequest {
-        let apiKey = Bundle.main.infoDictionary!["KAKAO_API_KEY"] as! String
+        let apiKey = Bundle.main.infoDictionary?["KAKAO_API_KEY"] as? String ?? ""
         return AF.request(
             BASE_URL + DOMAIN,
             parameters: [
