@@ -19,7 +19,11 @@ final class KakaoImageSearchAPI {
         let apiKey = Bundle.main.infoDictionary!["KAKAO_API_KEY"] as! String
         return AF.request(
             BASE_URL + DOMAIN,
-            parameters: ["query": keyword, "page": page, "size": size],
+            parameters: [
+                "query": keyword.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed) ?? "",
+                "page": page,
+                "size": size
+            ],
             headers: ["Authorization" : "KakaoAK \(apiKey)"]
         )
     }
