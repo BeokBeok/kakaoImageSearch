@@ -7,7 +7,7 @@
 
 import Alamofire
 
-class KakaoImageSearchApi {
+final class KakaoImageSearchAPI {
     private let BASE_URL = "https://dapi.kakao.com"
     private let DOMAIN = "/v2/search/image"
     
