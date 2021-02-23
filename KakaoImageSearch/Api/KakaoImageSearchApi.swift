@@ -8,8 +8,8 @@
 import Alamofire
 
 final class KakaoImageSearchAPI {
-    private let BASE_URL = "https://dapi.kakao.com"
-    private let DOMAIN = "/v2/search/image"
+    private static let BASE_URL = "https://dapi.kakao.com"
+    private static let DOMAIN = "/v2/search/image"
     
     func searchImage(
         keyword: String,
@@ -18,7 +18,7 @@ final class KakaoImageSearchAPI {
     ) -> Alamofire.DataRequest {
         let apiKey = Bundle.main.infoDictionary?["KAKAO_API_KEY"] as? String ?? ""
         return AF.request(
-            BASE_URL + DOMAIN,
+            KakaoImageSearchAPI.BASE_URL + KakaoImageSearchAPI.DOMAIN,
             parameters: [
                 "query": keyword.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed) ?? "",
                 "page": page,
