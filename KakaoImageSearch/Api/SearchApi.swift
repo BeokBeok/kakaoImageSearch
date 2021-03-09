@@ -7,7 +7,7 @@
 
 import Alamofire
 
-final class SearchAPI {
+final class SearchAPI : SearchAPIType {
     private static let BASE_URL = "https://dapi.kakao.com"
     private static let DOMAIN = "/v2/search/image"
     

@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		28C97862BF2368948CF13410 /* Pods_KakaoImageSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D363FE70AB4A6FA5D40EA015 /* Pods_KakaoImageSearch.framework */; };
-		945FB43925C83BAA00C9AA29 /* KakaoImageSearchApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945FB43825C83BAA00C9AA29 /* KakaoImageSearchApi.swift */; };
+		9428501E25F7B40800B0FF0C /* SearchAPIType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9428501D25F7B40800B0FF0C /* SearchAPIType.swift */; };
+		945FB43925C83BAA00C9AA29 /* SearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945FB43825C83BAA00C9AA29 /* SearchAPI.swift */; };
 		9467836B25A5F9AC00A106A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9467836A25A5F9AC00A106A2 /* AppDelegate.swift */; };
 		9467836D25A5F9AC00A106A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9467836C25A5F9AC00A106A2 /* SceneDelegate.swift */; };
 		9467836F25A5F9AC00A106A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9467836E25A5F9AC00A106A2 /* ViewController.swift */; };
@@ -22,7 +23,8 @@
 
 /* Begin PBXFileReference section */
 		0AC10A9B8B03CEDAB77F31D8 /* Pods-KakaoImageSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoImageSearch.debug.xcconfig"; path = "Target Support Files/Pods-KakaoImageSearch/Pods-KakaoImageSearch.debug.xcconfig"; sourceTree = "<group>"; };
-		945FB43825C83BAA00C9AA29 /* KakaoImageSearchApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoImageSearchApi.swift; sourceTree = "<group>"; };
+		9428501D25F7B40800B0FF0C /* SearchAPIType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAPIType.swift; sourceTree = "<group>"; };
+		945FB43825C83BAA00C9AA29 /* SearchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAPI.swift; sourceTree = "<group>"; };
 		9467836725A5F9AC00A106A2 /* KakaoImageSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KakaoImageSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9467836A25A5F9AC00A106A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9467836C25A5F9AC00A106A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,7 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				9467838625A6052E00A106A2 /* Model */,
-				945FB43825C83BAA00C9AA29 /* KakaoImageSearchApi.swift */,
+				945FB43825C83BAA00C9AA29 /* SearchAPI.swift */,
+				9428501D25F7B40800B0FF0C /* SearchAPIType.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -237,9 +240,10 @@
 				9467836F25A5F9AC00A106A2 /* ViewController.swift in Sources */,
 				9467838E25A607BE00A106A2 /* ImageResponse.swift in Sources */,
 				9467836B25A5F9AC00A106A2 /* AppDelegate.swift in Sources */,
+				9428501E25F7B40800B0FF0C /* SearchAPIType.swift in Sources */,
 				9467836D25A5F9AC00A106A2 /* SceneDelegate.swift in Sources */,
 				9467838B25A606AF00A106A2 /* ImageItem.swift in Sources */,
-				945FB43925C83BAA00C9AA29 /* KakaoImageSearchApi.swift in Sources */,
+				945FB43925C83BAA00C9AA29 /* SearchAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
