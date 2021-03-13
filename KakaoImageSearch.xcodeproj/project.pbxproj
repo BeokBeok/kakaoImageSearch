@@ -79,6 +79,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		94574A5325FCB79900F16728 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				945FB43825C83BAA00C9AA29 /* SearchAPI.swift */,
+				9428501D25F7B40800B0FF0C /* SearchAPIType.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		94574A5425FCB7B200F16728 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				9428504F25F7C3CD00B0FF0C /* NetworkError.swift */,
+				9428502125F7B53E00B0FF0C /* SearchRemoteDataSourceType.swift */,
+				9428502425F7B59900B0FF0C /* SearchRemoteDataSource.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
 		9467835E25A5F9AC00A106A2 = {
 			isa = PBXGroup;
 			children = (
@@ -100,7 +119,7 @@
 		9467836925A5F9AC00A106A2 /* KakaoImageSearch */ = {
 			isa = PBXGroup;
 			children = (
-				9467838425A6027E00A106A2 /* Api */,
+				9467838425A6027E00A106A2 /* Data */,
 				9467836A25A5F9AC00A106A2 /* AppDelegate.swift */,
 				9467836C25A5F9AC00A106A2 /* SceneDelegate.swift */,
 				9467836E25A5F9AC00A106A2 /* ViewController.swift */,
@@ -108,23 +127,20 @@
 				9467837325A5F9B200A106A2 /* Assets.xcassets */,
 				9467837525A5F9B200A106A2 /* LaunchScreen.storyboard */,
 				9467837825A5F9B200A106A2 /* Info.plist */,
-				9428504F25F7C3CD00B0FF0C /* NetworkError.swift */,
 			);
 			path = KakaoImageSearch;
 			sourceTree = "<group>";
 		};
-		9467838425A6027E00A106A2 /* Api */ = {
+		9467838425A6027E00A106A2 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				94574A5425FCB7B200F16728 /* Remote */,
+				94574A5325FCB79900F16728 /* Service */,
 				9467838625A6052E00A106A2 /* Model */,
-				945FB43825C83BAA00C9AA29 /* SearchAPI.swift */,
-				9428501D25F7B40800B0FF0C /* SearchAPIType.swift */,
-				9428502125F7B53E00B0FF0C /* SearchRemoteDataSourceType.swift */,
-				9428502425F7B59900B0FF0C /* SearchRemoteDataSource.swift */,
 				94574A4B25FCB44B00F16728 /* SearchRepository.swift */,
 				94574A4E25FCB46700F16728 /* SearchRepositoryType.swift */,
 			);
-			path = Api;
+			path = Data;
 			sourceTree = "<group>";
 		};
 		9467838625A6052E00A106A2 /* Model */ = {
