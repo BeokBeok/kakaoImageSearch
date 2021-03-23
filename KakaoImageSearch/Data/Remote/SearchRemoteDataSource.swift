@@ -8,7 +8,7 @@
 import Alamofire
 import RxSwift
 
-struct SearchRemoteDataSource : SearchRemoteDataSourceType {
+struct SearchRemoteDataSource: SearchRemoteDataSourceType {
     
     private let apiService: SearchAPIType
     
