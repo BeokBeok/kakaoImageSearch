@@ -16,6 +16,8 @@ struct SearchRepository: SearchRepositoryType {
     }
     
     func search(keyword: String, page: Int, size: Int) -> Single<ImageResponse> {
-        return searchRemoteDataSource.search(keyword: keyword, page: page, size: size)
+        return searchRemoteDataSource
+            .search(keyword: keyword, page: page, size: size)
+            .subscribe(on: ConcurrentDispatchQueueScheduler(qos: .background))
     }
 }
